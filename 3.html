@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>WEB1 - html</title>
-<meta charset = 'utf-8'>
+ <title>WEB1 - html</title>
+ <meta charset = 'utf-8'>
+
+
 </head>
 
 <body>
+  <script src="color.js"></script>
+  <h1><a href = "index.html">WEB</a></h1>
+
+<div id="gird">
 <ol>
-  <li><a href="1.html">1.html</a></li>
+
+  <input  type="button" value = "night" onclick="
+  night_day(this);
+  ">
+  <p><li><a href="1.html">1.html</a></li>
   <li><a href="2.html">2.css</a></li>
   <li><a href="3.html">3.javascrip</a></li>
 </ol>
-<h1>JavaScript</h1>
+<div id="article">
+<h2>JavaScript</h2>
  <a href ="https://www.w3resource.com/javascript/introduction/ECMA-and-javascript.php" target ="_blank" title="javascript speicification">JavaScript</a> is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.
+</div>
+</div>
 <img src = "coding.jpg" width = "100%">
+<input  type="button" value = "night" onclick="
+if (this.value === 'night')
+{
+ document.querySelector('body').style.backgroundColor = 'black';
+ document.querySelector('body').style.color = 'white';
+ this.value = 'day';
+}else  {
+ document.querySelector('body').style.backgroundColor = 'white';
+ document.querySelector('body').style.color = 'black';
+ this.value = 'night';
+}
+">
 </body>
 </html>
